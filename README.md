@@ -5,10 +5,11 @@ Sistema Web para cadastros de alunos e cursos.
 
 ### Como instalar
 
-1) Clone o repositório
-2) Crie o arquivo config/database.yml, use o config/database.yml.bkp como exemplo.
-3) Crie o banco e instale as gems.
-4) Comece a desenvolver e seja feliz.
+1. Clone o repositório
+2. Crie o arquivo config/database.yml, use o config/database.yml.bkp como exemplo.
+3. Instale as gems: bundle install
+4. Crie o banco: rake db:setup
+5) Comece a desenvolver e seja feliz.
 
 ### História
 
@@ -28,7 +29,7 @@ Funcionalidades iniciais:
 TODO:
 - [x] Iniciar projeto <br>
   Criar um projeto rails e banco mysql para iniciar o desenvolvimento da  aplicação.
-- [ ] Adicionar Teste <br>
+- [x] Adicionar testes <br>
   Adicionar gems rspec e guard para testar o sistema.
 - [ ] Adicionar bootstrap twitter
 - [ ] CRUD Cursos

@@ -14,6 +14,12 @@ end
 
 group :development, :test do
 	gem 'pry'
+	gem 'rspec-rails'
+	gem 'guard-rspec'
+end
+
+group :test do
+  gem 'rb-inotify'
 end
 
 gem 'jquery-rails'
