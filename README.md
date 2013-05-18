@@ -31,7 +31,7 @@ TODO:
   Criar um projeto rails e banco mysql para iniciar o desenvolvimento da  aplicação.
 - [x] Adicionar testes <br>
   Adicionar gems rspec e guard para testar o sistema.
-- [ ] Adicionar bootstrap twitter
+- [x] Adicionar bootstrap twitter
 - [ ] CRUD Cursos
 - [ ] CRUD Alunos
 - [ ] Matricular aluno no curso
