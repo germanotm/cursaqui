@@ -9,16 +9,16 @@ Sistema Web para cadastros de alunos e cursos.
 2. Crie o arquivo config/database.yml, use o config/database.yml.bkp como exemplo.
 3. Instale as gems: bundle install
 4. Crie o banco: rake db:setup
-5) Comece a desenvolver e seja feliz.
+5. Comece a desenvolver e seja feliz.
 
 ### História
 
 Esse sistema foi inicialmente desenvolvido para um processo seletivo no qual participei em 2013 para a empresa innvent.
 Foi solicitado o desenvolvimento de um sistema web com as seguintes funcionalidades mínimas.
 
-a) cadastro de alunos [nome, email, matrícula, data nascimento].
-b) cadastro de turma [nome, data início, data fim].
-c) deve ser possível matricular um aluno na turma.
+a) cadastro de alunos [nome, email, matrícula, data nascimento].<br>
+b) cadastro de turma [nome, data início, data fim].<br>
+c) deve ser possível matricular um aluno na turma.<br>
 
 Devido a minha restrição de tempo, apenas o final de semana, optei por primeiro atender às funcionalidades mínimas.
 
