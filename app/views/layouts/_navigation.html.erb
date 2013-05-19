@@ -3,11 +3,12 @@
   <span class="icon-bar"></span>
   <span class="icon-bar"></span>
 </button>
-<a class="brand" href="#">CursAqui</a>
+<a class="brand" href="#"></a>
+<%= link_to "CursAqui", root_path, :class => "brand" %>
 <div class="nav-collapse collapse">
   <ul class="nav">
     <li><%= link_to "Início", root_path %></li>
     <li><a>Cursos</a></li>
-    <li><a>Alunos</a></li>
+    <li><%= link_to "Alunos", students_path %></li>
   </ul>
 </div><!--/.nav-collapse -->

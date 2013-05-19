@@ -1,6 +1,8 @@
 Cursaqui::Application.routes.draw do
   
+  resources :students
+
+
   root :to => 'home#index'
-  get "home/index"
   
 end

@@ -33,7 +33,7 @@ TODO:
   Adicionar gems rspec e guard para testar o sistema.
 - [x] Adicionar bootstrap twitter
 - [ ] CRUD Cursos
-- [ ] CRUD Alunos
+- [x] CRUD Alunos
 - [ ] Matricular aluno no curso
 
 PASSO 2 - Tornando o projeto útil e interessante.

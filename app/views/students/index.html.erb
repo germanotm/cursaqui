@@ -1,0 +1,31 @@
+<h1>Alunos</h1>
+
+<table class="table table-striped">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Matrícula</th>
+    <th>Data de Nascimento</th>
+    <th></th>
+  </tr>
+
+<% @students.each do |student| %>
+  <tr>
+    <td><%= student.name %></td>
+    <td><%= student.email %></td>
+    <td><%= student.registry %></td>
+    <td><%= student.birthdate.try(:strftime, "%d/%m/%Y") %></td>
+    <td>
+      <div class="btn-group">
+        <%= link_to 'Mostrar', student, :class => 'btn btn-mini' %>
+        <%= link_to 'Editar', edit_student_path(student), :class => 'btn btn-mini' %>
+        <%= link_to 'Deletar', student, :class => 'btn btn-mini btn-danger', method: :delete, data: { confirm: 'Tem certeza?' } %>
+      </div>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novo Aluno', new_student_path, :class => 'btn' %>

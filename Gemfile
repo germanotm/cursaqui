@@ -17,10 +17,14 @@ group :development, :test do
 	gem 'pry'
 	gem 'rspec-rails'
 	gem 'guard-rspec'
+	gem 'factory_girl_rails'
 end
 
 group :test do
   gem 'rb-inotify'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 2.2.1'
+gem 'simple_form', '~> 2.1.0'
+gem 'client_side_validations', '~> 3.2.5'
+gem 'client_side_validations-simple_form', '~> 2.1.0'

@@ -1,0 +1,17 @@
+<%= simple_form_for(@student, :validate => true) do |f| %>
+  
+  <%= f.error_notification %> 
+
+  <%= f.input :name, label: 'Nome' %>
+  <%= f.input :email, label: 'Email'  %>
+  <%= f.input :registry, lable: 'Matricula' %>
+  <%= f.input :birthdate, as: :date,
+                          start_year: Date.today.year - 90,
+                          end_year: Date.today.year %>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Salvar aluno", :class => 'btn-primary' %>
+    <%= link_to 'Cancelar', students_path, :class => 'btn' %>
+  </div>       
+
+<% end %>
