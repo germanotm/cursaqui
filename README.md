@@ -3,7 +3,7 @@ Cursa Aqui
 
 Sistema Web para cadastros de alunos e cursos.
 
-### demonstração online
+### Demonstração online
   Em breve...
 
 ### Como instalar
