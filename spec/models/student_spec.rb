@@ -31,7 +31,7 @@ describe Student do
     let(:student) { Factory.create(:basic_student) }
 
     it 'should have courses' do
-    	pending "courses not been implemented yet"
+    	pending "was not implemented yet"
     end
 
   end

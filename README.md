@@ -3,6 +3,9 @@ Cursa Aqui
 
 Sistema Web para cadastros de alunos e cursos.
 
+### Demostração online
+  Em breve...
+
 ### Como instalar
 
 1. Clone o repositório
@@ -32,7 +35,7 @@ TODO:
 - [x] Adicionar testes <br>
   Adicionar gems rspec e guard para testar o sistema.
 - [x] Adicionar bootstrap twitter
-- [ ] CRUD Cursos
+- [x] CRUD Cursos
 - [x] CRUD Alunos
 - [ ] Matricular aluno no curso
 
