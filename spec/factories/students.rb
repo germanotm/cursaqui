@@ -3,6 +3,6 @@ FactoryGirl.define do
     f.sequence(:name) { |n| "foo#{n}name" }
     f.sequence(:registry) { |n| "#{n}" }
     f.sequence(:email) { |n| "foo#{n}@example.com" }
-    f.date Date.today
+    f.birthdate Date.today
   end  
 end

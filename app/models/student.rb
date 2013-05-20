@@ -1,8 +1,10 @@
 class Student < ActiveRecord::Base
-  attr_accessible :birthdate, :email, :name, :registry
+  attr_accessible :birthdate, :email, :name, :registry, :course_ids
+
+  has_and_belongs_to_many :courses
 
   validates :birthdate, :email, :name, :registry, :presence => true
-  validates :email, :uniqueness => true
+  validates :email,:registry, :uniqueness => true
 
   def age
     current_date = Date.today

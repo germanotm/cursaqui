@@ -28,10 +28,11 @@ describe Student do
   end
 
   describe 'relationships' do
-    let(:student) { Factory.create(:basic_student) }
+    let(:student) { FactoryGirl.create(:basic_student) }
 
     it 'should have courses' do
-    	pending "was not implemented yet"
+    	student.courses << FactoryGirl.create(:basic_course)
+      student.courses.count.should == 1
     end
 
   end

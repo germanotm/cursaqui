@@ -37,7 +37,7 @@ TODO:
 - [x] Adicionar bootstrap twitter
 - [x] CRUD Cursos
 - [x] CRUD Alunos
-- [ ] Matricular aluno no curso
+- [x] Matricular aluno no curso
 
 PASSO 2 - Tornando o projeto útil e interessante.
 Um dia quem sabe...

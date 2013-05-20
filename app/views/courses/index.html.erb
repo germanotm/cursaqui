@@ -1,0 +1,33 @@
+<h1>Cursos</h1>
+
+<table class="table table-striped">
+  <tr>
+    <th>Nome</th>
+    <th>Date início</th>
+    <th>Date fim</th>
+    <th>localização</th>
+    <th>Número de vagas</th>
+    <th></th>
+  </tr>
+
+<% @courses.each do |course| %>
+  <tr>
+    <td><%= course.name %></td>
+    <td><%= course.date_start %></td>
+    <td><%= course.date_end %></td>
+    <td><%= course.location %></td>
+    <td><%= course.capacity %></td>
+    <td>
+      <div class="btn-group">
+      <%= link_to 'Show', course, :class => 'btn btn-mini' %>
+      <%= link_to 'Edit', edit_course_path(course), :class => 'btn btn-mini' %>
+      <%= link_to 'Destroy', course, method: :delete,:class => 'btn btn-mini btn-danger', data: { confirm: 'Tem certeza?' } %>
+      </div>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novo curso', new_course_path, :class => 'btn btn-primary' %>

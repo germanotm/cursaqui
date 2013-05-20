@@ -20,6 +20,14 @@
   <%= @student.birthdate.try(:strftime, "%d/%m/%Y") %>
 </p>
 
+<p>
+  <b>Cursos:</b>
+  <% @student.courses.each do |c| %>
+    <%= link_to c.name, course_path(c) %>
+  <% end %>
+</p>
+
+
 <div class="form-actions">
 	<%= link_to 'Editar', edit_student_path(@student) , :class => 'btn' %>
 	<%= link_to 'Voltar', students_path, :class => 'btn' %>

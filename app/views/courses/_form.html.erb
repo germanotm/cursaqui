@@ -1,0 +1,30 @@
+<%= simple_form_for(@course, :validate => true) do |f| %>
+  <%= f.error_notification %>
+  
+  <% if @course.errors.any? %>
+  <div class="alert alert-error">
+    <%= f.error :base %>
+  </div>
+  <% end %>
+  
+
+  <%= f.input :name, label: 'Nome' %>
+
+  <%= f.input :date_start, label: 'Data inicial',
+                           start_year: Date.today.year,
+                           end_year: Date.today.year + 5 %>
+
+  <%= f.input :date_end, label: 'Data final',
+                         start_year: Date.today.year,
+                         end_year: Date.today.year + 5 %>
+
+  <%= f.input :location, label: 'Localização', input_html: { class: 'location-input' } %>
+  <%= f.input :capacity, label: 'Número de vagas' %>
+
+  <%= f.association :students, as: :check_boxes, label: "Alunos" %>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Salvar curso", :class => 'btn-primary' %>
+    <%= link_to 'Cancelar', courses_path, :class => 'btn' %>
+  </div>
+<% end %>

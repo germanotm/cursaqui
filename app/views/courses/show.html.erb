@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @course.name %>
+</p>
+
+<p>
+  <b>Data inicial:</b>
+  <%= @course.date_start %>
+</p>
+
+<p>
+  <b>Data final:</b>
+  <%= @course.date_end %>
+</p>
+
+<p>
+  <b>Localização:</b>
+  <%= @course.location %>
+</p>
+
+<p>
+  <b>Número de vagas:</b>
+  <%= @course.capacity %>
+</p>
+
+<p>
+  <b>Número de alunos:</b>
+  <%= @course.students.count %>
+</p>
+
+<p>
+  <b>Alunos:</b>
+  <% @course.students.each do |s| %>
+    <%= link_to s.name, student_path(s) %>
+  <% end %>
+</p>
+
+<div class="form-actions">
+  <%= link_to 'Editar', edit_course_path(@course), :class => 'btn' %>
+  <%= link_to 'Back', courses_path, :class => 'btn' %>
+</div>
