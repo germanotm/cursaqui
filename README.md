@@ -3,7 +3,7 @@ Cursa Aqui
 
 Sistema Web para cadastros de alunos e cursos.
 
-### Demostração online
+### demonstração online
   Em breve...
 
 ### Como instalar
@@ -44,7 +44,7 @@ Um dia quem sabe...
 
 Para aproveitar o tempo de desenvolvimento nesse projeto resolvi acrescentar algumas funcionalidades para tornar o sistema realmente utilizável. 
 As funcionalidades foram escolhidadas tendo como objetivo atender uma necessidade atual do CEFET-MG e que pode ser necessidade de alguma outra instituição.
-O CEFET realiza frequentemente minicursos e palestras, mas não possui um sistema no qual os alunos possam se inscrever na palestra ou minicurso e posteriormente imprimir seu certificado de participadão.
+O CEFET realiza frequentemente minicursos e palestras, mas não possui um sistema no qual os alunos possam se inscrever na palestra ou minicurso e posteriormente imprimir seu certificado de participação.
 
 O sistema final irá possibilitar que a instituição cadastre cursos, que podem ser palestras ou minicursos.
 Após isso, uma pessoa(aluno) cadastrada no sistema poderá se inscrever em um curso.
